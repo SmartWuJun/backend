@@ -13,9 +13,11 @@ Vue.prototype.$http = axios
 
 Vue.use(ElementUI)
     /* eslint-disable no-new */
+    // debugger;
 new Vue({
     el: '#app',
     router,
-    template: '<App/>',
-    components: { App }
+    // template: '<App/>',
+    // components: { App }
+    render:h=>h(App)
 })

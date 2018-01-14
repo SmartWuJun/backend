@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.1",
     "axios": "^0.17.1",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.1.0",

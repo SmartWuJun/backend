@@ -5,12 +5,14 @@ import json from 'koa-json'
 import bodyparser from 'koa-bodyparser'
 import koaRouter from 'koa-router'
 import auth from './server/routes/auth'
+// import cors from '@koa/cors'
 
 const app = new Koa();
 const router = koaRouter();
 app.use(logger())
 app.use(bodyparser())
-app.use(json())
+// app.use(json())
+// app.use(cors())
 
 app.use(async function (ctx, next) {
     let start = new Date()
