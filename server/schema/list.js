@@ -19,6 +19,14 @@ module.exports = function(sequelize, DataTypes) {
     status: {
       type: DataTypes.INTEGER(1).UNSIGNED.ZEROFILL,
       allowNull: false
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      allowNull: true
     }
   }, {
     tableName: 'list'
